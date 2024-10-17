@@ -1,0 +1,202 @@
+[
+    {
+        "requirement": "Read the image and change RGB in order of BGR. Note that in the cv2.imread() function the channel will be in order of BGR! \n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': '- This module will handle the reading of the image, manipulating the RGB values to change them to BGR format, and managing the overall workflow of the image processing task.'}]"
+    },
+    {
+        "requirement": "Make the image grayscale. Grayscale is a kind of image luminance expression method.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the logic to convert color images to grayscale, utilizing image processing libraries within Python such as OpenCV or PIL (Pillow).'}]"
+    },
+    {
+        "requirement": "Binarize the image. Binarization is a method of expressing images as binary black and white. Here, the threshold is set to 128 in gray scale.\n",
+        "answer": "[{'module_name': 'BinarizationAlgorithm', 'coding_language': 'Python', 'module_description': '- This module will implement the binarization logic to convert the grayscale image into a binary image using the specified threshold of 128.'}]"
+    },
+    {
+        "requirement": "Binarize the image using Otsu method. Otsu's binarization is called a discriminant analysis method, and it is a method to automatically determine the separation threshold in binarization. This is calculated from the ratio between intra-class variance and interclass variance .\n",
+        "answer": "[{'module_name': 'OTSU_BINARIZATION', 'coding_language': 'Python', 'module_description': '- This module will implement the Otsu method for binarizing the image. It will calculate the optimal threshold based on intra-class and interclass variance and apply this for image binarization.'}]"
+    },
+    {
+        "requirement": "Implement HSV conversion of the image and flip Hue Value. HSV conversion is a method of expressing colors by Hue, Saturation, Value.\n",
+        "answer": "[{'module_name': 'ImageProcessing', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: Implement the HSV conversion algorithm for images, focusing on the transformation of RGB values to HSV and vice versa. This module will include the flipping of the Hue value and ensuring the output maintains the proper Saturation and Value.'}]"
+    },
+    {
+        "requirement": "Discretization of the color of the image. Decrease the value of the image from 256 ^ 3 to 4 ^ 3. That is, to each of the four values R, G, B in {32, 96, 160, 224}. This is a quantization operation.\n",
+        "answer": "[{'module_name': 'COLOR_QUANTIZATION', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the color quantization algorithm that reduces the color values of an image from 256^3 to 4^3 by mapping the RGB values to the specific quantized values of {32, 96, 160, 224}. The implementation will handle reading the input image, processing the color values, and outputting the quantized image.'}]"
+    },
+    {
+        "requirement": "Implement average Pooling on the input image path. In this case, the image is divided into grids (divide it into certain fixed-length regions), and the value in the region is filled with the average value in the region (cell). The operation of dividing the grid in this way and obtaining the representative value in that area is called pooling.\n",
+        "answer": "[{'module_name': 'ImageProcessingModule', 'coding_language': 'Python', 'module_description': 'Module Description: This module will focus on loading the input image, dividing it into fixed-length grids (regions), and calculating the average values for each region to perform the pooling operation. It will handle image manipulation and data extraction necessary for the pooling process.'}]"
+    },
+    {
+        "requirement": "Implement max Pooling on the image. In this case, the image is divided into grids (divide it into certain fixed-length regions), and the value in the region is filled with the maximum value in the region (cell). The operation of dividing the grid in this way and obtaining the representative value in that area is called pooling.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module will focus on implementing the max pooling algorithm, which includes dividing the image into fixed-length regions (grids) and determining the maximum value within each region. It will handle image input, processing, and output of the pooled result.'}]"
+    },
+    {
+        "requirement": "Implement the Gaussian filter (3\u00d73) on the image. The Gaussian filter is a type of filter that performs smoothing (smoothing) of an image, and it is also used for noise removal. The Gaussian filter smoothes surrounding pixels of the pixel of interest by weighting by Gaussian distribution. Such weights are called kernels and filters.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION - This module will handle the implementation of the Gaussian filter, including the creation of the Gaussian kernel and the application of the filter to the image for smoothing and noise removal. It will include functions for generating the Gaussian weights and processing the pixel values of the image.'}]"
+    },
+    {
+        "requirement": "Implement the median filter (3x3) on the image. The median filter is a type of filter that performs smoothing of an image. This is a filter that outputs a median value (median value) within the 3\u00d73 region of the target pixel.\n",
+        "answer": "[{'module_name': 'IMAGE_PREPROCESSING', 'coding_language': 'Python', 'module_description': '- This module will involve loading the image, converting it to a suitable format for filtering, and handling any necessary preprocessing steps (such as converting to grayscale if applicable).'}, {'module_name': 'MEDIAN_FILTER_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': '- This module will implement the 3x3 median filter algorithm, which calculates the median of the pixel values within the 3x3 region around each target pixel and applies it to produce the output image.'}, {'module_name': 'IMAGE_POSTPROCESSING', 'coding_language': 'Python', 'module_description': '- This module will involve any necessary post-processing steps such as saving the filtered image, displaying it, or performing additional enhancements if required.'}]"
+    },
+    {
+        "requirement": "Implement the smoothing filter (3x3) on the image. The smoothing filter is a filter that outputs the average value of the pixels in the filter.\n",
+        "answer": "[{'module_name': 'SMOOTHING_FILTER', 'coding_language': 'Python', 'module_description': \"Implement the smoothing filter (3x3) that calculates the average value of pixels within the filter's window and applies it to the image.\"}]"
+    },
+    {
+        "requirement": "Implement the motion filter (3x3) on the image. The motion filter is a filter that takes the average value in the diagonal direction.\n",
+        "answer": "[{'module_name': 'MOTION_FILTER_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': '- This module focuses on the implementation of the motion filter algorithm. It will take the input image, apply the 3x3 motion filter by calculating the average values in the diagonal direction, and generate the filtered output image.'}]"
+    },
+    {
+        "requirement": "Implement the Max-Min filter (3x3) on the image. The Max-Min filter is a filter that outputs the difference between the maximum value and the minimum value of pixels in the filter, and is one of the filters for edge detection . Edge detection is to detect a line in an image, and an operation to extract information in such an image is called feature extraction . For edge detection, filtering is performed on grayscale images in many cases.\n",
+        "answer": "[{'module_name': 'MAX_MIN_FILTER_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': 'This module will implement the Max-Min filter algorithm. It will involve writing the logic to traverse the image, apply the 3x3 filter, and compute the differences between the maximum and minimum pixel values in the filter window.'}]"
+    },
+    {
+        "requirement": "Implement differential filter (3x3) on the image. The differential filter is a filter that extracts the edge of the portion where the abrupt change in luminance occurs and takes the difference between the adjacent pixels.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the differential filter logic to process the input images. It will include functions to read the image, apply the differential filter to detect edges, and output the filtered image.'}]"
+    },
+    {
+        "requirement": "Implement the Sobel filter (3x3) on the image. The Sobel filter (Sobel filter) is a filter that extracts only edges in a specific direction (vertical and horizontal).\n",
+        "answer": "[{'module_name': 'SOBEL_FILTER_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': '- This module focuses on the implementation of the Sobel filter algorithm itself, which includes the application of the Sobel kernels to extract vertical and horizontal edges from the image.'}]"
+    },
+    {
+        "requirement": "Implement the Prewitt filter (3x3) on the image. The Prewitt filter is a type of edge extraction filter.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: Implement the 3x3 Prewitt filter algorithm to perform edge detection on images, which involves convolution operations and the calculation of gradients in the x and y directions. This module will include functionalities for loading images, applying the filter, and saving the processed images.'}]"
+    },
+    {
+        "requirement": "Implement the Laplacian filter. The Laplacian filter is a filter that performs edge detection by taking the second derivative of luminance.\n",
+        "answer": "[{'module_name': 'FILTER_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': 'This module will focus on implementing the core functionality of the Laplacian filter, including the mathematical calculations to derive the second derivative of luminance.'}]"
+    },
+    {
+        "requirement": "Implement the Emboss filter. The Emboss filter is a filter that embosses outline parts.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': '- This module is responsible for the implementation of the core functionality of the Emboss filter, including the algorithms that manipulate pixel data to achieve the embossing effect. It will cover the necessary image operations such as convolution and pixel manipulation.'}, {'module_name': 'IMAGE_IO', 'coding_language': 'Python', 'module_description': '- This module handles the input and output of images. It will include functionality to read image files, apply the Emboss filter by invoking the image processing module, and write the processed images back to disk. \\n\\nThese two modules effectively cover the project requirements while keeping the structure simple and focused.'}]"
+    },
+    {
+        "requirement": "Implement the LoG filter (s = 3) and detect the edge of the input image, given the image path. The LoG filter is the Laplacian of Gaussian, which filters the image with the Gaussian filter and then takes out the outline with the Laplacian filter. Since the Laplcian filter takes a second derivative, noise is suppressed in advance by a Gaussian filter in order to prevent noise from being emphasized.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: Implement the LoG filter (Laplacian of Gaussian) to process the input image. This module will handle the steps of applying the Gaussian filter followed by the Laplacian filter to effectively detect edges in the image. It will also manage loading the image from the given path and returning the processed output.'}]"
+    },
+    {
+        "requirement": "Use matplotlib to display the histogram of the input image. A histogram is a graph of the appearance frequency of pixels. In matplotlib, there is already a function called hist(), so use it.\n",
+        "answer": "[{'module_name': 'ImageInputModule', 'coding_language': 'Python', 'module_description': '- This module is responsible for loading the input image into the program, ensuring compatibility with various image formats and converting the image data into a suitable format for further processing.'}, {'module_name': 'HistogramCalculationModule', 'coding_language': 'Python', 'module_description': '- This module computes the frequency of pixel values in the input image, preparing the necessary data for visualization via a histogram.'}]"
+    },
+    {
+        "requirement": "Implement histogram normalization to the input image. It can be seen that the histogram has a bias. For example, if there are many pixels close to 0, the image will be dark overall, and if there are many pixels close to 255, the image will be bright. The local bias of the histogram is expressed as a narrow dynamic range . Therefore, processing such as normalization and flattening of the histogram is necessary to make the image easy to be viewed by the human eye. This histogram normalization is called gray-scale transformation, and can be realized by the following equation when converting an image having pixel values of [c, d] into a range of [a, b]. This time, imori_dark.jpg is converted to the range of [0, 255] respectively.\n",
+        "answer": "[{'module_name': 'HISTOGRAM_NORMALIZATION', 'coding_language': 'Python', 'module_description': 'This module implements the gray-scale transformation equation to normalize and flatten the histogram of the image, converting the pixel values to the specified range of [0, 255].'}]"
+    },
+    {
+        "requirement": "Operate the mean value of the histogram of the input image so that m0 = 128 and the standard deviation s0 = 52. This is not a change in the dynamic range of the histogram but an operation to change the histogram to be flat.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: Implement the functionality to read the input image, compute the histogram, and adjust the mean value to 128 while ensuring the standard deviation is 52 for a flat histogram. This module will focus on image manipulation techniques without any GUI or testing functionality.'}]"
+    },
+    {
+        "requirement": "Implement histogram flattening on the input image. Histogram flattening is an operation for changing the histogram to be flat, and is an operation for balancing the histogram values without requiring the above-mentioned average value or standard deviation.\n",
+        "answer": "[{'module_name': 'HISTOGRAM_FLATTENING', 'coding_language': 'Python', 'module_description': \"This module implements the histogram flattening algorithm, which will manipulate the image's histogram to achieve a flat profile, effectively balancing the histogram values.\"}]"
+    },
+    {
+        "requirement": "Perform gamma correction (c = 1, g = 2.2) on the input image. Gamma correction is correction when pixel values are converted non-linearly via a device such as a camera. When an image is displayed as it is on a display or the like, the screen becomes dark. Therefore, it is an object of gamma correction to perform image display excluding the characteristics of the display by increasing the values of RGB in advance.\n",
+        "answer": "[{'module_name': 'GAMMA_CORRECTION', 'coding_language': 'Python', 'module_description': 'Module_DESCRIPTION: This module will implement the gamma correction algorithm, taking an input image and applying the specified gamma correction formula (c = 1, g = 2.2) to adjust the RGB pixel values non-linearly. The module will also handle image loading and saving functionalities.'}]"
+    },
+    {
+        "requirement": "Enlarge the image 1.5 times by nearest neighbor interpolation. Nearest neighbor interpolation is a method of using the nearest pixel as it is when enlarging an image. Simple and fast processing speed, but the image quality is significantly degraded.\n",
+        "answer": "[{'module_name': 'IMAGE_ENLARGEMENT', 'coding_language': 'Python', 'module_description': 'Module Description: This module will implement the nearest neighbor interpolation algorithm to enlarge the image by 1.5 times. It will handle reading the input image, processing the pixel data for enlargement, and outputting the enlarged image.'}]"
+    },
+    {
+        "requirement": "Enlarge the image 1.5 times with Bi-linear interpolation. Bi-linear interpolation is a method of complementing by weighting the four surrounding pixels according to the distance. Although the processing time is increased as the amount of calculation is large, deterioration of the image quality can be suppressed.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: This module will handle the implementation of the bi-linear interpolation algorithm to enlarge images by 1.5 times. It will focus on reading the original image, applying the interpolation calculations, and producing the enlarged image as output.'}]"
+    },
+    {
+        "requirement": "Enlarge the image 1.5 times by Bi-cubic interpolation. Bi-cubic interpolation is an extension of Bi-linear interpolation, and performs interpolation from surrounding 16 pixels.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': '- This module will be responsible for implementing the bi-cubic interpolation algorithm to enlarge the image by 1.5 times. It will handle reading the input image, processing the pixel values according to the bi-cubic interpolation method, and generating the output image.'}]"
+    },
+    {
+        "requirement": "Translate the image by +30 in the x direction and -30 in the y direction using affine transformation.\n",
+        "answer": "[{'module_name': 'IMAGE_LOAD_AND_TRANSFORM', 'coding_language': 'Python', 'module_description': 'This module handles the loading of the image, applies the affine transformation to translate the image by +30 in the x direction and -30 in the y direction, and saves or outputs the transformed image.'}]"
+    },
+    {
+        "requirement": "Resize the image 1.3 times in x direction and 0.8 times in y direction using affine transformation.\n",
+        "answer": "[{'module_name': 'IMAGE_RESIZE', 'coding_language': 'Python', 'module_description': 'Module Description: This module will implement the affine transformation to resize the input image by 1.3 times in the x direction and 0.8 times in the y direction. It will involve creating functions to handle image loading, applying the affine transformation, and saving the resized image.'}]"
+    },
+    {
+        "requirement": "Given an image path, rotate the image 30 degrees counterclockwise using affine transformation then use the affine transformation to create an image that can be seen in the entire image rotated counterclockwise by 30 degrees. (However, if a simple affine transformation is performed, the image will be cut off, so some ingenuity is required.)\n",
+        "answer": "[{'module_name': 'IMAGE_ROTATION', 'coding_language': 'Python', 'module_description': 'Module Description: This module will handle the implementation of the affine transformation needed to rotate the image 30 degrees counterclockwise. It will also be responsible for ensuring the entire rotated image is visible, which may involve calculating the appropriate translation to accommodate the new dimensions of the rotated image.'}]"
+    },
+    {
+        "requirement": "Create a geometrically transformed (dx = 30, dy = 30) image by using affine transformation. Such an image is called a skewed image and is obtained by extending an image in an oblique direction.\n",
+        "answer": "[{'module_name': 'IMAGE_LOADING_AND_TRANSFORMATION', 'coding_language': 'Python', 'module_description': 'Module Description: This module will be responsible for loading an image from a specified source, applying the affine transformation to skew the image by the specified dx (30) and dy (30) values, and saving the transformed image to a desired location.'}]"
+    },
+    {
+        "requirement": "Implement two-dimensional Discrete Fourier Transform (DFT) and display the power spectrum of the frequency of the input grayscale. Then restore the image with two-dimensional Inverse Discrete Fourier transform (IDFT).\n",
+        "answer": "[{'module_name': 'DFT_IMPLEMENTATION', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the two-dimensional Discrete Fourier Transform (DFT) algorithm to process the input grayscale image and generate its frequency representation.'}]"
+    },
+    {
+        "requirement": "Use DFT for input image grayscale, and then restore the image using IDFT through a low pass filter. Frequency components obtained by DFT include lower frequency components as they are closer to the upper left, upper right, lower left, and the higher frequency components as they are closer to the center. The high frequency component in the image indicates a portion where the color is changed (noise, outline, etc.), and the low frequency component indicates the portion where the color has not changed much (such as the gradation of the sunset). In this case, implement a low pass filter that cuts high frequency components and only passes low frequency components. Here, if the distance from the center of the low frequency to the high frequency is r, components less than 0.5r are passed.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module will handle the loading of the input grayscale image and preparing it for processing, including converting the image to a format suitable for Discrete Fourier Transform (DFT).'}]"
+    },
+    {
+        "requirement": "Use DFT for input image grayscale, and then restore the image using IDFT through a high pass filter. In this case, implement a high-pass filter that cuts low frequency components and only passes high frequency components. Here, if the distance from the center of the low frequency to the high frequency is r, components greater than 0.2r are passed.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the Discrete Fourier Transform (DFT) to convert the input grayscale image into the frequency domain. It will handle reading the input image, applying DFT, and preparing the frequency components for filtering.'}]"
+    },
+    {
+        "requirement": "Use DFT for input image grayscale, and then restore the image using IDFT through a band pass filter. In this case, implement a band pass filter that only passes intermediate frequency components between low-frequency and high-frequency components. Here, if the distance from the center of the low frequency to the high frequency is r, components from 0.1r to 0.5r are passed.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': '- Implement functions to read and convert the input image to grayscale, perform Discrete Fourier Transform (DFT) on the grayscale image, apply the band pass filter to isolate the desired frequency components, and then perform Inverse Discrete Fourier Transform (IDFT) to restore the image.'}]"
+    },
+    {
+        "requirement": "Given an image path, implement a Canny edge detection to the image. The Canny method is 1. Apply Gaussian filter. 2. Apply Sobel filters in the x and y directions and find edge magnitude and edge slope from them. 3. Thinning the edge by Non-maximum suppression from the value of edge gradient 4. Perform threshold processing with hysteresis.\n",
+        "answer": "[{'module_name': 'IMAGE_PREPROCESSING', 'coding_language': 'Python', 'module_description': '- This module will implement the Gaussian filter to smooth the input image in preparation for edge detection.'}, {'module_name': 'EDGE_DETECTION', 'coding_language': 'Python', 'module_description': '- This module will apply the Sobel filters in the x and y directions to compute the edge magnitude and edge slope based on the results of the Gaussian filter.'}, {'module_name': 'EDGE_THINNING', 'coding_language': 'Python', 'module_description': '- This module will perform non-maximum suppression to thin the edges from the edge gradient values obtained in the previous module.'}, {'module_name': 'THRESHOLD_PROCESSING', 'coding_language': 'Python', 'module_description': '- This module will implement threshold processing with hysteresis to finalize the edge detected image.'}]"
+    },
+    {
+        "requirement": "Implement Hough transformation and detect the straight line in the input image. The Hough transformation is a method of detecting a straight line in an image. The straight line is expressed as y = ax + b in the image, and the Hough transformation is a method of converting the straight line into a point in the parameter space (a, b). The Hough transformation is a method of detecting a straight line in an image. The straight line is expressed as y = ax + b in the image, and the Hough transformation is a method of converting the straight line into a point in the parameter space (a, b).\n",
+        "answer": "[{'module_name': 'Hough_Transformation_Implementation', 'coding_language': 'Python', 'module_description': '- This module will implement the Hough transformation algorithm to detect straight lines in the given input image. It will include the mathematical formulation of the transformation and the algorithms for converting lines in the image to points in the parameter space (a, b).'}]"
+    },
+    {
+        "requirement": "Implement morphological dilation on the binarized image. Morphological dilation is a method of expanding the image. This is a method of expanding the image by the size of the kernel.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'Implement a function that performs morphological dilation on a binarized image using a defined kernel size. This module will handle loading the input image (./test_image.png), applying the dilation operation, and saving the output image.'}]"
+    },
+    {
+        "requirement": "Implement morphological erosion on the binarized image. Morphological erosion is a method of reducing the image. This is a method of reducing the image by the size of the kernel.\n",
+        "answer": "[{'module_name': 'MODULE_IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: Implement the morphological erosion algorithm that takes a binarized image as input and processes it using a specified kernel size. This module will handle the image reading, applying the erosion operation, and outputting the processed image.'}]"
+    },
+    {
+        "requirement": "Implement opening operation on the binarized image. The opening operation is a method of removing noise from the image. This is a method of performing erosion after dilation.\n",
+        "answer": "[{'module_name': 'OPENING_OPERATION', 'coding_language': 'Python', 'module_description': '- This module will implement the opening operation on the loaded image by performing dilation followed by erosion. It will include the necessary algorithms to ensure that the operation effectively removes noise from the image.'}]"
+    },
+    {
+        "requirement": "Implement closing operation on the binarized image. The closing operation is a method of filling the holes in the image. This is a method of performing dilation after erosion.\n",
+        "answer": "[{'module_name': 'IMAGE_PROCESSING', 'coding_language': 'Python', 'module_description': 'This module will implement the closing operation on the binarized image. It will include functions for both dilation and erosion processes required to fill holes in the image. The input will be the specified image file `./test_image.png`.'}]"
+    },
+    {
+        "requirement": "Given image path, implement the gradient of the binarized image. The gradient is a method of extracting the outline of the image. This is a method of performing dilation after erosion and subtracting the eroded image from the dilated image.\n",
+        "answer": "[{'module_name': 'IMAGE_PREPROCESSING', 'coding_language': 'Python', 'module_description': 'This module will focus on reading the image from the provided path and converting it into a binary format suitable for processing. It will include functions for image loading and binarization techniques.'}, {'module_name': 'GRADIENT_COMPUTATION', 'coding_language': 'Python', 'module_description': 'This module will implement the gradient extraction method by performing dilation after erosion. It will consist of functions for both dilation and erosion, as well as the logic to subtract the eroded image from the dilated image to obtain the final gradient image.'}]"
+    },
+    {
+        "requirement": "Implement the Top-Hat filter on the binarized image. The Top-Hat filter is a method of extracting the part where the brightness of the image is higher than the surroundings. This is a method of subtracting the opening image from the original image.\n",
+        "answer": "[{'module_name': 'Top-HatFilterImplementation', 'coding_language': 'Python', 'module_description': 'This module is responsible for implementing the Top-Hat filter algorithm. It includes the necessary computations to subtract the opened image from the original image and extract the highlighted regions.'}]"
+    },
+    {
+        "requirement": "Implement the Black-Hat filter on the binarized image. The Black-Hat filter is a method of extracting the part where the brightness of the image is lower than the surroundings. This is a method of subtracting the original image from the closing image.\n",
+        "answer": "[{'module_name': 'blackhat', 'coding_language': 'Python', 'module_description': 'Module for Black-Hat Filter Implementation - This module will implement the Black-Hat filter by calculating the closing of the binarized image and subtracting the original image from it to extract the desired features.'}]"
+    },
+    {
+        "requirement": "Implement the SSD (Sum of Squared Difference) matching. SSD is a method of matching two images. This is a method of calculating the sum of the squared difference of the pixel values of the two images.\n",
+        "answer": "[{'module_name': 'SSD_CALCULATION', 'coding_language': 'Python', 'module_description': '- This module will implement the core functionality of the Sum of Squared Difference (SSD) matching algorithm, including the computation of the squared differences between pixel values of the input image and a reference image (to be defined later) and calculating the sum of these differences.'}]"
+    },
+    {
+        "requirement": "Implement the SAD (Sum of Absolute Difference) matching. SAD is a method of matching two images. This is a method of calculating the sum of the absolute difference of the pixel values of the two images.\n",
+        "answer": "[{'module_name': 'SAD_CALCULATION', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: This module will implement the SAD algorithm, which involves calculating the sum of absolute differences between the pixel values of two images.'}]"
+    },
+    {
+        "requirement": "Implement the NCC (Normalized Cross Correlation) matching. NCC is a method of matching two images. This is a method of calculating the normalized cross-correlation of the pixel values of the two images.\n",
+        "answer": "[{'module_name': 'NCC_COMPUTATION', 'coding_language': 'Python', 'module_description': 'MODULE_DESCRIPTION: This module will implement the core algorithm for normalized cross-correlation. It will take the preprocessed images as input and calculate the normalized cross-correlation values for matching the two images.'}]"
+    },
+    {
+        "requirement": "Implement the Connected Component Labeling of 4-connectivity. Connected Component Labeling is a method of labeling the same area in the image. This is a method of labeling the same area in the image.\n",
+        "answer": "[{'module_name': 'ConnectedComponent', 'coding_language': 'Python', 'module_description': '- This module will implement the core functionality of Connected Component Labeling using 4-connectivity. The focus will be on developing algorithms that effectively label connected pixels in an image, ensuring accurate identification of distinct components.'}]"
+    },
+    {
+        "requirement": "Implement the Connected Component Labeling of 8-connectivity. Connected Component Labeling is a method of labeling the same area in the image. This is a method of labeling the same area in the image.\n",
+        "answer": "[{'module_name': 'ConnectedComponent', 'coding_language': 'Python', 'module_description': '- MODULE_DESCRIPTION: Implement the core algorithm for Connected Component Labeling using 8-connectivity on the input image. This module will be responsible for processing the image, identifying connected components, and assigning labels to the same areas in the image. It will also handle reading the input image and preparing it for further processing.'}]"
+    },
+    {
+        "requirement": "Implement the Alpha Blending of the two images. Alpha Blending is a method of blending two images. This is a method of blending two images by a ratio of alpha. The euqaion is as follows: alpha * image1 + (1 - alpha) * image2.",
+        "answer": "[{'module_name': 'ALPHA_BLENDING', 'coding_language': 'Python', 'module_description': 'Module to implement the alpha blending algorithm using the equation provided (alpha * image1 + (1 - alpha) * image2), and produce the blended image as output.'}]"
+    }
+]
